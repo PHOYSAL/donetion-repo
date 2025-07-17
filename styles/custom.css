@@ -19,9 +19,11 @@ footer {
     max-width: 940px;
     margin: 50px auto;
 }
-main>section{
+
+main>section {
     margin-top: 150px;
 }
+
 .display-flex {
     display: flex;
 }
@@ -80,16 +82,26 @@ p {
     font-size: 3.5rem;
     font-weight: 700;
 }
-
+.bg-color-1{
+    background: rgba(79, 157, 166, 0.1);
+}
+.bg-color-2{
+    background: rgba(255, 89, 89, 0.1)
+}
+.bg-color-3{
+    background: rgb(255, 244, 214);
+}
 /* banner related style  */
-.amount-container{
+.amount-container {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin-top: 70px;
 }
-.content-container{
+
+.content-container {
     text-align: center;
 }
+
 .amount-list {
     width: 135px;
     height: 123px;
@@ -111,32 +123,70 @@ p {
     border: 2px solid rgb(255, 89, 89);
     border-radius: 5px;
     background: rgb(255, 238, 238);
-    
+
 }
-.amount-list h4:hover{
-color: #FF5959;
+
+.amount-list h4:hover {
+    color: #FF5959;
 }
-.amount-select{
-    margin-top: 60px ;
+
+.amount-select {
+    margin-top: 60px;
     justify-content: center;
     text-align: center;
 }
-.amount-select>div{
+
+.amount-select>div {
     width: 100%;
 }
+
+/* donate plan section style  */
+.donate-plan-content {
+    text-align: center;
+}
+.donate-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.donate-card-container{
+    justify-content: space-between;
+    gap: 24px;
+}
+
+
+.donate-card {
+    padding: 25px 60px 10px 60px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+
+
+
+
+
 
 
 
 
 
 @media screen and (max-width:576px) {
-    .amount-container{
-        grid-template-columns: repeat(2,1fr);
+    body{
+        padding: 10px;
+    }
+    .amount-container {
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         gap: 24px;
     }
-    .amount-container div:last-child{
+
+    .amount-container div:last-child {
         grid-column: span 2;
         justify-self: center;
+    }
+    .donate-card-container{
+        flex-direction: column;
     }
 }
