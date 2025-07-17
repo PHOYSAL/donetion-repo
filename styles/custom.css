@@ -171,8 +171,36 @@ p {
     border-radius: 10px;
 }
 
+/* update section related style  */
+.update-container{
+    text-align: center;
+}
 
-
+footer{
+    padding: 75px 10px;
+    background-color: #FFF4D6;
+}
+footer>div input{
+    padding: 16px 12px;
+    border: none;
+    margin-right: 0;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container input[type="email"] ,button{
+    border: none;
+    padding: 16px 12px;
+}
+.footer-container >button{
+    background: #FF5959;
+    color: white;
+}
+footer>div{
+    text-align: center;
+}
 
 
 
