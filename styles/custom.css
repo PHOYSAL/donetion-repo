@@ -159,7 +159,17 @@ p {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
+/* donate and survive section style  */
+.depend-container{
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+.depend-container>div img{
+    width: 100%;
+    border-radius: 10px;
+}
 
 
 
@@ -186,7 +196,11 @@ p {
         grid-column: span 2;
         justify-self: center;
     }
-    .donate-card-container{
+    .donate-card-container,
+    .depend-container{
         flex-direction: column;
+    }
+    .column-reverse{
+        flex-direction: column-reverse;
     }
 }
